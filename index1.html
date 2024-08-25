@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Comprehension Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="main-container">
+        <h1>Comprehension Quiz</h1>
+        <div id="menu">
+            <p>Select a Comprehension:</p>
+            <button onclick="startQuiz(0)">Animals</button>
+            <button onclick="startQuiz(1)">Boat</button>
+            <button onclick="startQuiz(2)">Forest</button>
+            <button onclick="exitQuiz()">Exit</button>
+        </div>
+        <div id="quiz" style="display:none;">
+            <p id="question-text"></p>
+            <input type="text" id="answer-input" placeholder="Enter your answer...">
+            <button onclick="submitAnswer()">Submit Answer</button>
+            <p id="result"></p>
+            <button onclick="nextQuestion()">Next Question</button>
+        </div>
+        <div id="score" style="display:none;">
+            <h2>Your Score</h2>
+            <p id="total-score"></p>
+            <p id="rating"></p>
+            <button onclick="exitQuiz()">Exit</button>
+        </div>
+        <div id="goodbye" style="display:none;">
+            <h1>Goodbye!</h1>
+            <p>Thanks for playing! 😊</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
